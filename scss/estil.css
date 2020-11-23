@@ -1,0 +1,269 @@
+@charset "UTF-8";
+nav li a {
+  color: white;
+  display: block;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background: tomato;
+  color: white;
+}
+
+@media screen and (min-width: 480px) {
+  nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.mainGrupos {
+  max-width: 800px;
+  padding: 0rem;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 200px 200px 200px 200px;
+      grid-template-columns: 200px 200px 200px 200px;
+  -ms-grid-rows: 200px 200px 200px;
+      grid-template-rows: 200px 200px 200px;
+  grid-gap: 2rem;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 50%;
+  height: 50%;
+  border-radius: 10px;
+}
+
+.item-a {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / 3;
+}
+
+.item-b {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3 / 5;
+}
+
+.item-c {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2 / 4;
+}
+
+.item-d {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3 / 5;
+}
+
+.logo {
+  width: 15%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1cm;
+}
+
+#nav-menu li {
+  list-style: none;
+  float: center;
+  color: orange;
+  position: relative;
+  left: 33%;
+}
+
+.menu {
+  color: orange;
+  border: 5px solid goldenrod;
+  margin: 0px 0px 0px 5px;
+}
+
+.parrafo1 {
+  color: whitesmoke;
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 95%;
+  max-width: 900px;
+  padding: 32px 64px;
+  margin: auto;
+}
+
+.social {
+  width: 100px;
+  position: fixed;
+  top: 50px;
+  right: 0;
+}
+
+.social {
+  top: 50%;
+  height: 100px;
+  margin-top: -100px;
+}
+
+/* Página ÁREAS */
+.areas {
+  text-align: center;
+  color: green;
+  margin-bottom: 1cm;
+  margin-top: 2cm;
+}
+
+.contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0px 0px 100px 200px;
+}
+
+.elemento {
+  width: 30%;
+  color: goldenrod;
+}
+
+/* Página GRUPOS */
+.tablaGrupos {
+  color: #300430;
+}
+
+.ofertaGrupos {
+  color: green;
+}
+
+.container1 {
+  width: 95%;
+  max-width: 900px;
+  padding: 32px 64px;
+  margin-left: 290px;
+}
+
+#form {
+  color: green;
+  margin-bottom: 1cm;
+}
+
+.contactos li {
+  list-style-type: square;
+  list-style: none;
+  color: orange;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  font-weight: lighter;
+  font-size: 20px;
+}
+
+section {
+  font-size: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 50px;
+  background-color: orange;
+  -webkit-animation-name: un_efecto;
+          animation-name: un_efecto;
+  -webkit-animation-iteration-count: initial;
+          animation-iteration-count: initial;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+@-webkit-keyframes un_efecto {
+  0% {
+    width: 100px;
+  }
+  50% {
+    width: 900px;
+    background-color: #e0a016;
+  }
+  100% {
+    width: 950px;
+    background-color: orange;
+  }
+}
+
+@keyframes un_efecto {
+  0% {
+    width: 100px;
+  }
+  50% {
+    width: 900px;
+    background-color: #e0a016;
+  }
+  100% {
+    width: 950px;
+    background-color: orange;
+  }
+}
+
+.mainGrupos div:hover {
+  width: 400px;
+}
+
+footer {
+  font-size: 15px;
+  margin-left: 200px;
+  margin-top: 100px;
+}
+
+.media li {
+  display: inline;
+  list-style: none;
+  position: relative;
+  left: 40%;
+}
+
+main {
+  font-size: 15px;
+  margin: 70px 350px 50px 350px;
+}
+
+.whatsapp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100;
+}
+
+.whatsapp-icon {
+  margin-top: 13px;
+}
+/*# sourceMappingURL=estil.css.map */
